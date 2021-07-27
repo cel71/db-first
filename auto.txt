@@ -1,0 +1,31 @@
+
+name: Used-cars
+
+Columns:                        Type:                   Attributes:                             Index:
+
+Id:                             BIGINT UNSIGNED         AUTO_INCREMENT, NOT NULL, UNIQUE        PRIMARY KEY
+Marca:                          VARCHAR (255)           NOT NULL
+Allestimento:                   VARCHAR (255)           NULL
+Telaio:                         VARCHAR (255)           NOT NULL, UNIQUE                        INDEX
+Targa:                          VARCHAR (7)             NOT NULL, UNIQUE                        INDEX
+Tipo di carburante usato:       VARCHAR (50)            NOT NULL
+Motore:                         VARCHAR (50)            NOT NULL
+Cambio:                         VARCHAR (20)            NOT NULL
+Tipologia di auto:              TEXT                    NULL
+Cilindrata:                     VARCHAR (255)           NOT NULL
+Numero di Porte:                TINYINT UNSIGNED        NOT NULL
+Posti a sedere:                 TINYINT UNSIGNED        NOT NULL
+Iva:                            TINYINT UNSIGNED        NOT NULL, UNIQUE
+Codice chiavi:                  SMALLINT UNSIGNED       NOT NULL, UNIQUE                        INDEX
+Tipo di Veicolo Usato o no:     VARCHAR (50)            NOT NULL
+Km percorsi:                    DOUBLE (9,3) UNSIGNED   NOT NULL
+Immatricolazione:               VARCHAR (255)           NOT NULL, UNIQUE                        INDEX
+Proprietari precedenti:         TEXT                    NULL, UNIQUE
+Neopatentati:                   VARCHAR (255)           NULL
+Data entrata:                   DATE                    NOT NULL               
+Data ricovero:                  DATE                    NOT NULL                
+Data collaudo:                  DATE                    NOT NULL                
+Data diagnosi:                  DATE                    NOT NULL                
+Data interventi:                DATE                    NOT NULL                
+Data consegna:                  DATE                    NOT NULL  
+Prezzo:                         FLOAT (7,2)             NOT NULL, UNIQUE
