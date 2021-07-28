@@ -28,4 +28,4 @@ Data collaudo:                  DATE                    NOT NULL
 Data diagnosi:                  DATE                    NOT NULL                
 Data interventi:                DATE                    NOT NULL                
 Data consegna:                  DATE                    NOT NULL  
-Prezzo:                         FLOAT (7,2)             NOT NULL, UNIQUE
+Prezzo:                         DECIMAL (7,2)           NOT NULL, UNIQUE
